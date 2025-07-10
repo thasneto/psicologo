@@ -184,21 +184,26 @@ footer p {
 	color: #fff;
 }
 
-#topBtn {
-	margin-top: 15px;
-	padding: 14px 28px;
-	background-color: #A3D9B1;
-	border: none;
-	color: #2C3E50;
-	font-weight: bold;
-	border-radius: 25px;
-	cursor: pointer;
-	font-size: clamp(1rem, 1.1vw, 1.3rem);
+/* Inicio Botao de retornar ao topo */
+.return-top {
+	width: 70px;
+	height: 70px;
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	background-color: #fff;
+	border: solid 1px;
+	border-radius: 30%;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+.return-top img {
+	width: 50px;
+}
+/* Fim Botao de retornar ao topo */
 /* Fim Footer */
 
-/* === Responsividade === */
+/* Responsividade */
 
 /* Celulares (até 600px) */
 @media (max-width: 600px) {
