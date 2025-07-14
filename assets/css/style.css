@@ -201,6 +201,11 @@ footer p {
 	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+.return-top:hover {
+	cursor: pointer;
+	background-color: #2C3E50;
+}
+
 .return-top img {
 	width: 50px;
 }
