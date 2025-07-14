@@ -1,4 +1,6 @@
 const btn = document.getElementById("return");
+const btnMenu = document.getElementById("btn-menu");
+const menu = document.getElementsByClassName("nav-links")[0];
 
 window.onload = function () {
 	btn.style.display = "none";
@@ -10,4 +12,13 @@ window.onscroll = function() {
 
 function voltarAoTopo () {
 	window.scrollTo({top: 0, behavior: "smooth"});
+};
+
+function abrirMenu () {
+	if (menu.style.display == "block") {
+		menu.style.display = "none";
+	} else {
+		menu.style.display = "block";
+	};
+
 };
