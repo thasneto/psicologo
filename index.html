@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+	
+	<!-- Meta tags -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!-- Title -->
+	<title>Eduardo Martins | Psicólogo Gestalt</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="./css/extends.css">
+
+	<!-- Fonts -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-	<title>Eduardo Martins | Psicólogo TCC</title>
+
 </head>
+
 <body>
-	<header>
-		<div class="container navigation" id="navigation">
-			<div class="titulo-menu">
-				<h1>Dr. Eduardo Martins</h1>
-				<button id="btn-menu" onclick="abrirMenu()"><img src="assets/img/menu.svg" alt="burguer menu" id="burguer"></button>
-			</div>
-			<nav class="nav-links">
+	<!-- NavBar -->
+	<nav class="navbar" id="navigation">
+		<div class="title-menu container">
+			<a href="/" class="navbar-logo">Dr. Eduardo Martins</a>
+			<button id="btn-menu" onclick="abrirMenu()"><img src="./assets/menu.svg" alt="burguer menu" id="burguer"></button>
+		
+
+			<!-- NavBar Links -->
+			<div class="nav-links">
 				<ul>
 					<li><a href="#sobre">Sobre</a></li>
-					<li><a href="#tcc">TCC</a></li>
+					<li><a href="#tcc">Abordagem</a></li>
 					<li><a href="#servicos">Serviços</a></li>
 					<li><a href="#contato">Contato</a></li>
 				</ul>            
-			</nav>
+			</div>
 		</div>
-	</header>
+	</nav>
 
-	<main>
+	<!-- Header -->
+	<header>
+		
+		<!-- Bio -->
 		<section class="hero">
 			<div class="container">
-				<h2>Psicólogo especialista em Terapia Cognitivo-Comportamental</h2>
+				<h2>Psicólogo Especialista em Gestalt-Terapia</h2>
 				<p>Transforme pensamentos, emoções e comportamentos. Viva melhor.</p>
 				<a href="#contato" class="btn">Agendar sessão</a>
 			</div>
 		</section>
+	</header>
+
+	
+	<main>
 		
+		<!-- About Section -->
 		<section>
 			<div class="container sobre" id="sobre">
 				<img src="https://media.licdn.com/dms/image/v2/D4D03AQE_zeBuSDuBOg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1714012382550?e=2147483647&v=beta&t=6vtwvwLYIPzSLukXW9OmzliOp7jcK5ExCwptpxGo3tI" alt="Foto do Eduardo Martins" class="foto-perfil">
@@ -44,22 +65,31 @@
 			</div>
 		</section>
 		
+		<!-- Description Section -->
 		<section class="section-light-green">
 			<div class="container" id="tcc">
-				<h3>O que é TCC?</h3>
+				<h3>O que é Gestalt-terapia?</h3>
 				<article>
-					<p>A Terapia Cognitivo-Comportamental é uma abordagem baseada em evidências científicas. Trabalha com a identificação de pensamentos automáticos negativos, reestruturação cognitiva e desenvolvimento de habilidades práticas para lidar com desafios emocionais.</p>
+					<p>A Gestalt-terapia é uma abordagem humanista da psicologia que coloca a pessoa no centro do processo terapêutico, valorizando sua forma única de perceber, sentir e se relacionar com o mundo. Mais do que focar apenas em sintomas ou problemas, ela busca compreender o ser humano em sua totalidade corpo, mente, emoções e ambiente.</p>
+					<p>Criada por Fritz Perls, Laura Perls e Paul Goodman na década de 1950, a Gestalt-terapia tem como base o princípio do aqui e agora, ou seja, a atenção ao momento presente. Isso significa que o processo terapêutico convida o paciente a reconhecer suas emoções, pensamentos e comportamentos no instante em que acontecem, favorecendo maior consciência de si e de suas escolhas.</p>
+					<p>Outro conceito central é o da responsabilidade, que não deve ser entendido como culpa, mas como a capacidade de responder às situações da vida de forma autêntica. A terapia apoia o cliente a identificar padrões repetitivos, bloqueios e necessidades não atendidas, promovendo novas possibilidades de contato consigo mesmo, com os outros e com o mundo.</p>
+					
+					<h3>Benefícios da Gestalt-terapia</h3>
 					<ul>
-						<li>Transtornos de ansiedade</li>
-						<li>Depressão</li>
-						<li>Estresse</li>
-						<li>Autoestima</li>
+						<li>Maior consciência das próprias emoções e comportamentos.</li>
+						<li>Desenvolvimento da autonomia e autenticidade.</li>
+						<li>Redução da ansiedade e estresse por meio do foco no presente.</li>
+						<li>Reconhecimento e integração de partes fragmentadas da experiência.</li>
 						<li>Relacionamentos</li>
 					</ul>
+
+					<h3>Para quem é indicada?</h3>
+					<p>A Gestalt-terapia pode ajudar qualquer pessoa que deseje crescimento pessoal, autoconhecimento e transformação. Também é indicada em situações de ansiedade, depressão, dificuldades nos relacionamentos, luto, crises existenciais ou momentos de transição de vida.</p>
 				</article>
 			</div>
 		</section>
 		
+		<!-- Services Section -->
 		<section>
 			<div class="container" id="servicos">
 				<h3>Serviços</h3>
@@ -72,23 +102,25 @@
 			</div>
 		</section>
 		
+		<!-- Contact Section -->
 		<section class="section-light-green">
 			<div class="container" id="contato">
 				<h3>Fale comigo</h3>
 				<p>Agende sua consulta pelo Whatsapp ou pelas redes sociais</p>
 				<aside class="socials">
 					<ul>
-						<li><a href="https://wa.me/+5521973929982?text=Gostaria de marcar uma Consulta">WhatsApp</a></li>
-						<li><a href="https://www.instagram.com/thasneto/">Instagram</a></li>
-						<li><a href="https://www.linkedin.com/in/aminthas-silva-3213b6161/">LinkedIn</a></li>
+						<li><a href="https://wa.me/+5521994158339?text=Gostaria de marcar uma Consulta" target="_blank">WhatsApp</a></li>
+						<li><a href="https://www.instagram.com/juliogeigher/" target="_blank">Instagram</a></li>
+						<li><a href="https://www.linkedin.com/in/julio-geigher-552154b2/" target="_blank">LinkedIn</a></li>
 					</ul>
 				</aside>
 			</div>
 		</section>
 	</main>
 	
+	<!-- Footer -->
 	<footer>
-		<p>&copy; 2025 Rafael Mendonça - CRP 00/00000</p>
+		<p>&copy; 2025 Eduardo Geigher - CRP 05/75255</p>
 		
 		<button class="return-top" id="return" onclick="voltarAoTopo()">
 			<img src="assets/img/seta-para-cima.svg" alt="seta apontando para cima">
@@ -98,4 +130,5 @@
 	<script src="assets/js/script.js"></script>
 
 </body>
+
 </html>
