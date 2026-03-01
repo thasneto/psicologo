@@ -6,7 +6,6 @@ nav.navbar {
 
 #btn-menu {
 	background-color: var(--secondary-color);
-	display: none;
 	border: none;
 }
 
@@ -20,6 +19,7 @@ nav.navbar {
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: center;
+	gap: 25px;
 }
 
 nav.navbar a {
@@ -40,17 +40,24 @@ nav.navbar a {
 	gap: 25px;
 }
 
-
-nav.navbar ul a{
-	font-size: clamp(1rem, 1.2vw, 1.4rem);
+.nav-mobile .nav-links {
+	padding: 20px 0px 0px 0px;
+	flex-direction: column;
+	align-items: center;
+	list-style: none;
+	gap: 15px;
 }
 
-nav.navbar ul a:hover{
+nav.navbar ul a{
+	font-size: clamp(1.2rem, 1.2vw, 1.4rem);
+}
+
+.nav-desktop .nav-links a:hover{
 	color: var(--tertiary-color);
 }
 
 @media (max-width: 600px) {
-	#btn-menu {
+	#btn-menu, .nav-mobile {
 		display: block;
 	}
 
@@ -58,15 +65,26 @@ nav.navbar ul a:hover{
 		display: none;
 	}
 
-	.nav-mobile {
-		display: block;
-	}
-	
 	.nav-mobile .nav-links {
 		display: none;
-		flex-direction: column;
+	}
+	
+	.navbar-mobile {
+		display: flex;
+		flex-direction: row;
 		justify-content: space-between;
-		list-style: none;
-		gap: 10px;
+		gap: 50px;
+	}
+	
+}
+
+@media (min-width:601px) and (max-width: 1024px) {
+	
+	.navbar-logo{
+		font-size: clamp(1.5rem, 2.2vw, 2.5rem);
+	}
+
+	nav.navbar ul a{
+		font-size: clamp(1.0rem, 1.2vw, 1.4rem);
 	}
 }

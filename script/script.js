@@ -1,6 +1,6 @@
 const btn = document.getElementById("return");
 const btnMenu = document.getElementById("btn-menu");
-const menu = document.getElementsByClassName("nav-links")[0];
+const menu = document.getElementsByClassName("nav-links")[1];
 
 window.onload = function () {
 	btn.style.display = "none";
@@ -15,10 +15,10 @@ function voltarAoTopo () {
 };
 
 function abrirMenu () {
-	if (menu.style.display == "block") {
+	if (menu.style.display == "flex") {
 		menu.style.display = "none";
 	} else {
-		menu.style.display = "block";
+		menu.style.display = "flex";
 	};
 
 };
