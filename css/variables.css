@@ -2,14 +2,25 @@
 	--white: #ffffff;
 	--gray: #d9d9d9;
 	--black: #000000;
-
-	--primary-color: #f5f5f5;
-	--secondary-color: #2C3E50;
-	--tertiary-color: #33BD7D;
-
+	
+	--verde-principal: #7FAE9D;
+	--verde-claro:     #CFE3DB;
+	
+	--bege-fundo:      #F5EFE6;
+	--bege-secundario: #E8DCC8;
+	
+	--laranja-cta:     #D9A066;
+	--laranja-hover:   #C48B52;
+	
+	--texto-principal: #3A3A3A;
+	--texto-secundario:#6B6B6B;
+	
+	--icone-verde:   #8FBFB1;
+	--icone-bege:    #E5C9A8;
+	--icone-laranja: #E0A96D;
+	--icone-oliva:   #9FB7A5;
+	
 	--span-color: #d9eaff;
-
-	--dark-font-color: #1B3B4B;
 
 	--font-family: 'Poppins', sans-serif;
 }

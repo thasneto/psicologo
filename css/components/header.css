@@ -1,0 +1,48 @@
+header {
+	margin-top: 50px;
+	height: 50vh;
+}
+
+.hero-gestalt {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.wave {
+	width: 100%;
+	height: 65%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.wave h1 {
+	padding-bottom: 10px;
+	width: 320px;
+	font-size: 2rem;
+	border-bottom: 1px solid rgb(0,0,0,0.1);
+}
+
+.wave p {
+	margin-top: 25px;
+	width: auto;
+}
+
+.btn-contato {
+	width: 180px;
+	height: 35px;
+	margin-top: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--laranja-cta);
+	border-radius: 4px;
+	text-decoration: none;
+	color: var(--white);
+}
+
+.areas-atendimento {
+	width: 100%;
+	height: 35%;
+}

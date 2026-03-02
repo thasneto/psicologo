@@ -12,12 +12,17 @@ html{
 
 body {
 	line-height: 1.6;
-	background-color: var(--primary-color);
-	color: var(--seconday-color);
+	background-color: var(--bege-fundo);
+	color: var(--texto-principal);
 }
 
 .container {
 	max-width: 1440px;
 	margin: 0 auto;
-	padding: 20px 40px;
+	padding: 0 20px;
 }
+
+p, h2, h3 {
+	color: var(--texto-principal);
+}
+
