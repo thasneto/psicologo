@@ -1,38 +1,57 @@
 header {
 	margin-top: 50px;
-	height: 50vh;
+	height: 60vh;
+	overflow: hidden;
 }
 
-.hero-gestalt {
+.hero {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
-.wave {
+.hero-content {
 	width: 100%;
-	height: 65%;
+	height: 60%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.hero-text {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: center;	
 }
 
-.wave h1 {
-	padding-bottom: 10px;
-	width: 320px;
-	font-size: 2rem;
+.hero-text h1 {
+	padding: 40px 0 10px 0;
+	width: 300px;
+	font-weight: 500;
+	font-size: clamp(1.4rem, 2.0rem, 2.4rem);
 	border-bottom: 1px solid rgb(0,0,0,0.1);
 }
 
-.wave p {
-	margin-top: 25px;
-	width: auto;
+.hero-text p {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.hero-image {
+	width: 100%;
+}
+
+.hero-image img {
+	height: 100%;
+	mask-image: radial-gradient(circle, black 30%, transparent 55%);
 }
 
 .btn-contato {
 	width: 180px;
 	height: 35px;
-	margin-top: 15px;
+	margin-top: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -44,5 +63,26 @@ header {
 
 .areas-atendimento {
 	width: 100%;
-	height: 35%;
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.areas-atendimento ul {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.lista-areas {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.lista-areas img{
+	width: 200px;
+	height: 160px;
 }
