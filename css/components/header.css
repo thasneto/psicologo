@@ -1,10 +1,10 @@
 header {
 	margin-top: 50px;
-	height: 60vh;
 	overflow: hidden;
 }
 
 .hero {
+	width: 100vw;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -13,10 +13,21 @@ header {
 
 .hero-content {
 	width: 100%;
-	height: 60%;
+	height: 450px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	background-image: linear-gradient(
+		to right,
+		var(--bege-fundo) 20%,
+		transparent 70%),
+		url("../../assets/Eduardo.png"
+	);
+	background-position: 100% 10%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border-bottom-left-radius:50% 40%;
+	border-bottom-right-radius:60% 40%;
 }
 
 .hero-text {
@@ -39,15 +50,6 @@ header {
 	width: 100%;
 }
 
-.hero-image {
-	width: 100%;
-}
-
-.hero-image img {
-	height: 100%;
-	mask-image: radial-gradient(circle, black 30%, transparent 55%);
-}
-
 .btn-contato {
 	width: 180px;
 	height: 35px;
@@ -62,27 +64,67 @@ header {
 }
 
 .areas-atendimento {
+	margin-top: 40px;
+	padding-top: 10px;
 	width: 100%;
 	height: 40%;
+	border-top: 1px solid rgb(0,0,0,0.2);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	gap: 10px;
 }
 
 .areas-atendimento ul {
 	width: 100%;
+	height: auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
 }
 
 .lista-areas {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	gap: 10px;
 }
 
-.lista-areas img{
-	width: 200px;
-	height: 160px;
+.lista-areas img {
+	width: 130px;
+	height: 100px;
+}
+
+.lista-areas h3 {
+	font-size: 1.2rem;
+}
+
+@media (max-width:  600px) {
+	.hero-content {
+		background-image: none;
+		
+	}
+
+	.lista-areas img {
+		scale: 0.8;
+	}
+
+	.lista-areas h3 {
+		font-size: 0.8rem;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 1023px) {
+	.hero-content {
+		height: 300px;
+	}
+
+	.lista-areas img {
+		scale: 0.9;
+	}
+
+	.lista-areas h3 {
+		font-size: 0.9rem;
+	}
 }
