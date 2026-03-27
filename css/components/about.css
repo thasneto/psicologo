@@ -1,3 +1,7 @@
+#about {
+	scroll-margin-top: 70px;
+}
+
 .profile {
 	background: var(--verde-claro);
 	border-radius: 15px;
@@ -19,6 +23,10 @@
 	font-size: 1.4rem;
 }
 
+.crp {
+	font-weight: 600;
+}
+
 @media (max-width: 600px) {
 	.profile {
 		flex-direction: column;
@@ -31,11 +39,12 @@
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
-	.profile {
-		flex-direction: column;
+	.profile img {
+		max-height: 300px;
+		max-width: 300px;
 	}
 
-	.profile img {
-		max-height: 350px;
+	.about-content {
+		font-size: 1.2rem;
 	}
 }

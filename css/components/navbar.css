@@ -8,30 +8,34 @@ nav.navbar {
 	padding: 5px 0;
 	background-color: var(--bege-fundo);
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-	z-index: 1;
+	z-index: 999;
 }
 
-nav.navbar a {
+.navbar a {
 	color: var(--texto-principal);
 	text-decoration: none;
 }
 
-nav.navbar ul a {
-	font-size: clamp(1.2rem, 1.4vw, 1.6em);
+.nav-links li a {
+	height: 100%;
+	margin: 0 auto;
+	font-size: 1.6rem;
 }
 
 /* LOGO */
 .navbar-logo {
-	max-width: 70%;
 	display: flex;
 	align-items: center;
 	gap: 6px;
-	font-size: clamp(1.4rem, 1.6vw, 1.8rem);
 }
 
 .navbar-logo img {
 	display: block;
 	width: 30px;
+}
+
+.navbar-logo span {
+	font-size: 1.8rem;
 }
 
 /* BOTÃO MENU */
@@ -40,14 +44,14 @@ nav.navbar ul a {
 	width: 35px;
 	border: none;
 	background-color: var(--bege-fundo);
-
+	
 }
 
 /* DESKTOP */
 .nav-desktop {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-content: center;
 	gap: 20px;
 }
 
@@ -58,58 +62,79 @@ nav.navbar ul a {
 }
 
 .nav-desktop .nav-links a:hover {
-	padding-bottom: 5px;
+	padding: 5px 0;
 	color: var(--laranja-hover);
 	border-bottom: 2px solid var(--laranja-hover);
 }
 
 /* MOBILE */
 .nav-mobile {
-	display: none;
+	position: relative;
+	width: 100%;
 }
 
 .navbar-mobile {
-	display: flex;
+	width: 100%;
+	display: none;
+	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	/* gap: 10px; */
 }
 
 .nav-mobile .nav-links {
+	box-sizing: border-box;
+	display: none;
 	position: absolute;
-	top: 50px;
-	right: 0;
-	width: 150px;
-	padding: 10px 5px;
+	top: calc(100% + 10px);
+	right: 8px;
+	min-width: 140px;
+	max-width: calc(100vw - 16px);
+	width: max-content;
+	padding: 10px 12px;
 	background-color: var(--bege-fundo);
 	box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.15);
 	list-style: none;
-
-	display: flex;
+	border-radius: 8px;
+	gap: 8px;
+	z-index: 999;
 	flex-direction: column;
 	align-items: flex-start;
-	gap: 5px;
 }
 
 /* MEDIA QUERIES */
 @media (max-width: 600px) {
-
-	#btn-menu,
-	.nav-mobile {
+	
+	.navbar-mobile {
+		display: flex;
+	}
+	
+	#btn-menu {
 		display: block;
 	}
-
+	
 	.nav-desktop {
 		display: none;
 	}
-
+	
 	.nav-mobile .nav-links {
 		display: none;
+	}
+	
+	.navbar-logo span {
+		font-size: 1.4rem;
+	}
+
+	.nav-links li a {
+		font-size: 1.4rem;
 	}
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
-	nav.navbar ul a {
-		font-size: clamp(0.95rem, 1.2vw, 1.4rem);
+	.navbar-logo span {
+		font-size: 1.4rem;
+	}
+
+	.nav-links li a {
+		font-size: 1.2rem;
 	}
 }

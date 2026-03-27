@@ -23,26 +23,32 @@
 	<nav class="navbar" id="navigation">
 		<!-- NavBar Desktop -->
 		<div class="nav-desktop container">
-			<a href="#" class="navbar-logo"><img class="ribbon" src="./assets/ribbon.svg" alt="ribbon healthy"> Dr. Eduardo Martins</a>
+			<a href="#" class="navbar-logo">
+				<img class="ribbon" src="./assets/ribbon.svg" alt="ribbon healthy"> 
+				<span>Dr. Eduardo Martins</span>
+			</a>
 			<ul class="nav-links">
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="sobre.html">Sobre</a></li>
-				<li><a href="gestal.html">Gestalt-Terapia</a></li>
-				<li><a href="contato.html">Contato</a></li>
+				<li><a href="#hero">Inicio</a></li>
+				<li><a href="#about">Sobre</a></li>
+				<li><a href="#gestalt">Gestalt</a></li>
+				<li><a href="#contact">Contato</a></li>
 			</ul>            
 		</div>
 		
 		<!-- NavBar Mobile -->
 		<div class="nav-mobile container">
 			<div class="navbar-mobile">
-				<a href="#" class="navbar-logo"><img class="ribbon" src="./assets/ribbon.svg" alt="ribbon healthy"> Dr. Eduardo Martins</a>
+				<a href="#" class="navbar-logo">
+					<img class="ribbon" src="./assets/ribbon.svg" alt="ribbon healthy">
+					<span>Dr. Eduardo Martins</span>
+				</a>
 				<button id="btn-menu" onclick="abrirMenu()"><img id="btn-menu" src="./assets/burguer.svg" alt="burguer menu"></button>
 			</div>
 			<ul class="nav-links">
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="#Sobre">Sobre</a></li>
-				<li><a href="#gestalt">Gestalt-Terapia</a></li>
-				<li><a href="#contato">Contato</a></li>
+				<li><a href="#hero">Inicio</a></li>
+				<li><a href="#about">Sobre</a></li>
+				<li><a href="#gestalt">Gestalt</a></li>
+				<li><a href="#contact">Contato</a></li>
 			</ul>   
 		</div>
 
@@ -50,7 +56,7 @@
 
 	<!-- Header -->
 	<header>
-		<section class="hero">
+		<section class="hero" id="hero">
 			<div class="hero-content">
 				<div class="hero-text container">
 					<h1>Gestalt-Terapia com <br>Dr. Eduardo Martins</h1>
@@ -87,19 +93,20 @@
 	<main>
 		
 		<!-- About Section -->
-		<section class="container" id="about">
+		<section class="container section" id="about">
 			<div class="profile">
 				<img src="https://media.licdn.com/dms/image/v2/D4D03AQE_zeBuSDuBOg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1714012382550?e=2147483647&v=beta&t=6vtwvwLYIPzSLukXW9OmzliOp7jcK5ExCwptpxGo3tI" alt="Foto do Eduardo Martins" class="foto-perfil">
 				<article class="about-content">
 					<h3>Sobre o Eduardo</h3>
 					<p>Psicólogo clínico com mais de 10 anos de experiência em saúde mental. Atua com foco em Gesstalt, ajudando pacientes a compreender e modificar padrões de pensamento e comportamento que causam sofrimento emocional.</p>
+					<span class="crp">CRP: 06/123456</span>
 				</article>
 			</div>
 		</section>
 		
 		<!-- Description Section -->
-		<section class="section-light-green">
-			<div class="container" id="tcc">
+		<section class="container section" id="gestalt">
+			<div class="description">
 				<h3>O que é Gestalt-terapia?</h3>
 				<article>
 					<p>A Gestalt-terapia é uma abordagem humanista da psicologia que coloca a pessoa no centro do processo terapêutico, valorizando sua forma única de perceber, sentir e se relacionar com o mundo. Mais do que focar apenas em sintomas ou problemas, ela busca compreender o ser humano em sua totalidade corpo, mente, emoções e ambiente.</p>
@@ -122,8 +129,8 @@
 		</section>
 		
 		<!-- Services Section -->
-		<section>
-			<div class="container" id="servicos">
+		<section class="section" id="servicos">
+			<div class="container">
 				<h3>Serviços</h3>
 				<p>Atendimento psicológico individual para adolescentes e adultos, presencial e online.</p>
 				<ul>
@@ -135,7 +142,7 @@
 		</section>
 		
 		<!-- Contact Section -->
-		<section class="section-light-green">
+		<section class="contact section">
 			<div class="container" id="contato">
 				<h3>Fale comigo</h3>
 				<p>Agende sua consulta pelo Whatsapp ou pelas redes sociais</p>
