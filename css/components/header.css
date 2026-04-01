@@ -16,7 +16,7 @@
 		to right,
 		var(--bege-fundo) 20%,
 		transparent 70%),
-		url("../../assets/Eduardo.png"
+		url("../../assets/eduardo.png"
 	);
 	background-position: 100% 10%;
 	background-size: 100%;
@@ -60,14 +60,14 @@
 }
 
 .areas-atendimento {
+	width: 100%;
 	margin: 40px 0;
 	padding-top: 10px;
-	width: 100%;
 	border-top: 1px solid rgb(0,0,0,0.2);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 10px;
+	gap: 7px;
 }
 
 .areas-atendimento ul {
@@ -77,6 +77,7 @@
 	flex-direction: row;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
+	gap: 7px;
 }
 
 .lista-areas {
@@ -113,7 +114,7 @@
 	}
 
 	.lista-areas h3 {
-		font-size: 0.8rem;
+		font-size: 1.0rem;
 	}
 }
 
@@ -123,10 +124,10 @@
 	}
 
 	.lista-areas img {
-		scale: 0.9;
+		scale: 1.0;
 	}
 
 	.lista-areas h3 {
-		font-size: 0.9rem;
+		font-size: 1.2rem;
 	}
 }

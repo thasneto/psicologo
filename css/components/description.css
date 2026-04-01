@@ -1,0 +1,27 @@
+.description {
+	padding: 15px;
+	font-size: 1.4rem;
+	background-color: var(--verde-claro);
+	border-radius: 15px;
+}
+
+.benefits {
+	margin: 20px 0;
+}
+
+.benefits li {
+	margin-left: 18px; 
+}
+
+@media (max-width: 600px) {
+	.description {
+		font-size: 1.0rem;
+		padding: 10px;
+	}
+}
+
+@media (min-width: 600px) and (max-width:1024px) {
+	.description {
+		font-size: 1.2rem;
+	}
+}
